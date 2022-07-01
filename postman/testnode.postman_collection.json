@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "45d1c457-673b-4dd9-9ff1-4feefb72e95d",
+		"name": "testnode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13586474"
+	},
+	"item": [
+		{
+			"name": "user_register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_card",
+							"value": "",
+							"description": "บัตร ปชช",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "",
+							"description": "ปี-เดือน-วัน",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3080/api/user/user_register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3080",
+					"path": [
+						"api",
+						"user",
+						"user_register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_vaccinate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id_card",
+							"value": "",
+							"description": "บัตรปชช",
+							"type": "text"
+						},
+						{
+							"key": "vac1_name",
+							"value": "",
+							"description": "ชื่อ    เข็มที่ 1",
+							"type": "text"
+						},
+						{
+							"key": "vac1_date",
+							"value": "",
+							"description": "วันที่  เข็มที่ 1",
+							"type": "text"
+						},
+						{
+							"key": "vac2_name",
+							"value": "",
+							"description": "ชื่อ    เข็มที่ 2",
+							"type": "text"
+						},
+						{
+							"key": "vac2_date",
+							"value": "",
+							"description": "วันที่  เข็มที่ 2",
+							"type": "text"
+						},
+						{
+							"key": "vac3_name",
+							"value": "",
+							"description": "ชื่อ    เข็มที่ 3",
+							"type": "text"
+						},
+						{
+							"key": "vac3_date",
+							"value": "",
+							"description": "วันที่  เข็มที่ 3",
+							"type": "text"
+						},
+						{
+							"key": "vac4_name",
+							"value": "",
+							"description": "ชื่อ    เข็มที่ 4",
+							"type": "text"
+						},
+						{
+							"key": "vac4_date",
+							"value": "",
+							"description": "วันที่  เข็มที่ 4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/user/user_vaccinate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"user_vaccinate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
